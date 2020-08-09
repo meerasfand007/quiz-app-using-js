@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Quiz App</title>
+</head>
+<body>
+    <div class="container d-flex justify-content-center">
+        
+        <div class="row col-6 mt-5" >
+            To start the Quiz please insert your
+            <div class="input-group mb-3" >
+                <input type="text" class="form-control" 
+                id='username'
+                placeholder="Recipient's username" 
+                aria-label="Recipient's username" a
+                ria-describedby="basic-addon2">
+                <div class="input-group-append sm">
+                  <span class="input-group-text" id="basic-addon2"
+                  onclick="getUsername()"
+                  >submit</span>
+                </div>
+              </div>
+              
+        </div>
+    </div>
+    <div class="main-container model">
+        <div class="header d-flex justify-content-around bg-dark text-light" >
+            <h3>Welcome! <span id='name'></span> This is your quiz</h3>
+            <span class="timer">0:00</span>
+        </div>
+        <div class="body mt-5" > 
+            <div id='question'>
+                
+                <ul id="answers">
+                    <li class="options">Ali</li>
+                    <li class="options">Ahmed</li>
+                    <li class="options">Abdul Basit</li>
+                    <li class="options">Shehzad</li>
+                </ul>
+            </div>
+            
+        </div>
+        <button class="btn btn-success ml-5" onclick="nextQuestion()">
+            next
+        </button>
+        
+    </div>
+    <div class="model">
+        <div class="model-head">
+            <h3>Quiz Result</h3>
+            <span style="cursor: pointer;">&times;</span>
+        </div>
+        <div class="model-body" style="text-align: center;"></div>
+    </div>
+</body>
+<script src="./app.js"></script>
+</html>

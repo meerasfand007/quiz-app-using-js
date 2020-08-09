@@ -1,0 +1,67 @@
+body{
+    padding: 0px ;
+    margin: 0px ;
+}
+.header{
+    align-items: center;
+    margin: 0xp !important;
+    padding: 0px !important;
+    height: 60px;
+}
+.timer{
+    font-weight: bolder;
+}
+.options{
+    list-style-type: none;
+    width: 250px;
+    background-color: rgb(201, 137, 201);
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: justify;
+    cursor: pointer !important;
+    transition: ease-in 0.4s all;
+}
+.options:hover{
+    background-color: rgba(197, 163, 197,0.7);
+    margin-left: 18px ;
+    background-image: url('./tick.png');
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+.active{
+    background-color: rgba(197, 163, 197,0.7);
+    margin-left: 18px ;
+    background-image: url('./tick.png');
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+.model1{ 
+    display: none !important;
+}
+.model{
+    display: none;
+}
+.model-show{
+    display: flex !important;
+    flex-direction: column;
+    width: 300px;
+    background-color: limegreen;
+    padding-top:0px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    height:auto;
+}
+
+.model  .model-head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
+    border-bottom: 2px solid #fff;
+
+}
